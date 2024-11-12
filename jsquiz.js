@@ -163,6 +163,27 @@ function getanswer() {
     return result;
 }
 
+// nextbtn.addEventListener('click', () => {
+//     let selectedAnswer = getanswer();
+//     if (!submitted) {
+//         if (selectedAnswer) {
+//             if (selectedAnswer === quizdata[currentQue].correct) {
+//                 answered++;
+//             }
+//             currentQue++;
+//         } else {
+//             alert("Please select an option to proceed.");
+//         }
+
+//         if (currentQue < quizdata.length) {
+//             loadQuest();
+//         }
+//     } else {
+//         currentQue++;
+//         loadQuest();
+//     }
+// });
+
 nextbtn.addEventListener('click', () => {
     let selectedAnswer = getanswer();
     if (!submitted) {
@@ -191,6 +212,23 @@ prevbtn.addEventListener('click', () => {
     }
 });
 
+// submitbtn.addEventListener('click', () => {
+//     let selectedAnswer = getanswer();
+//     if (selectedAnswer === quizdata[currentQue].correct) {
+//         answered++;
+//     }
+
+//     submitted = true;
+//     quiz.style.display = "none";
+//     resultEle.style.display = "block";
+
+//     scoreEle.innerText = "Your Score: " + answered + "/" + quizdata.length;
+//     scoreEle.style.color = "Green";
+//     scoreEle.style.fontWeight = "bold";
+
+//     reloadbtn.style.display = "block";  // Show the reload button after submission
+// });
+
 submitbtn.addEventListener('click', () => {
     let selectedAnswer = getanswer();
     if (selectedAnswer === quizdata[currentQue].correct) {
@@ -207,6 +245,7 @@ submitbtn.addEventListener('click', () => {
 
     reloadbtn.style.display = "block";  // Show the reload button after submission
 });
+
 
 reloadbtn.addEventListener('click', function() {
     location.reload();  // Reload the page
