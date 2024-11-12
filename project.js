@@ -50,3 +50,21 @@ function themes(){
      document.body.style.background=color;
 }
 
+const email = document.getElementById("email");
+const form = document.getElementById("form")
+
+submit.addEventListener('submit', (e)=>{
+        e.preventDefault()
+        validate()
+});
+
+function validate(){
+     let useremail = email.value.trim()
+
+     if(useremail === ''){
+          setError(email, 'invalid')
+     }
+     else{
+          setSuccess(email);
+     }
+}
