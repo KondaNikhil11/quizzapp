@@ -1,4 +1,3 @@
-
 const quizdata = [
     {
         question: "What does HTML stand for?",
@@ -39,6 +38,46 @@ const quizdata = [
         c: "text-bold: true;",
         d: "text-weight: bold;",
         correct: "a"
+    },
+    {
+        question: "What is the result of 5 + '5' in JavaScript?",
+        a: "55",
+        b: "10",
+        c: "Error",
+        d: "NaN",
+        correct: "a"
+    },
+    {
+        question: "Which of the following is used to declare a variable in JavaScript?",
+        a: "var",
+        b: "let",
+        c: "const",
+        d: "All of the above",
+        correct: "d"
+    },
+    {
+        question: "Which method is used to add an element to the end of an array?",
+        a: "push()",
+        b: "pop()",
+        c: "shift()",
+        d: "unshift()",
+        correct: "a"
+    },
+    {
+        question: "What does the 'typeof' operator do in JavaScript?",
+        a: "Checks the value of a variable",
+        b: "Returns the data type of a variable",
+        c: "Converts a variable to a string",
+        d: "Creates a new variable",
+        correct: "b"
+    },
+    {
+        question: "Which of the following is NOT a valid way to write a comment in JavaScript?",
+        a: "// This is a comment",
+        b: "/* This is a comment */",
+        c: "<!-- This is a comment -->",
+        d: "// Comment",
+        correct: "c"
     }
 ];
 
