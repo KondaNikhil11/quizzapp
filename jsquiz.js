@@ -164,6 +164,7 @@ prevbtn.addEventListener('click', ()=>{
 submitbtn.addEventListener('click', ()=>{
     if(getanswer()){
         submitted=true;
+        answered++;
      quiz.style.display = "none";
      resultEle.style.display ="block";
      scoreEle.innerText ="  Your Score: "+ answered +"/"+quizdata.length;
